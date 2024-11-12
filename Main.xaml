@@ -1,0 +1,274 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="866.8,1860.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="DoubleUI" sap:VirtualizedContainerService.HintSize="450,1837.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1518.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CashIn">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">100</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="OnUsCheck">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">200</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="NotOnUsCheck">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">300</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="TransactionID" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cash In'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,290" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="f48ba7a8-8377-4d68-82a6-a933695c34be" ContentHash="DoL7enB2Yk60ab7JB6s4bw" CvElementArea="824, 413, 307, 65" CvType="InputBox" DesignTimeRectangle="829, 417, 300, 58" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='cashintb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='cashintb' role='editable text' /&gt;" Guid="afc7699f-bd94-49b1-9b50-2b8dd8ae8af0" InformativeScreenshot="73ae0b68f7c6fbfdaf2029d79db2807e.png" IsResponsive="True" Reference="HxnU693WM0e0ujgFaVypfQ/Z29_O8OCbk-LgCtGuBneXQ" ScopeSelectorArgument="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f48ba7a8-8377-4d68-82a6-a933695c34be" CvTextArea="653, 425, 122, 32" CvTextArgument="Cash In" CvType="Text" DesignTimeRectangle="656, 422, 121, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Cash In' role='text' /&gt;&lt;ctrl name='Cash In' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cash In' role='text' /&gt;&lt;ctrl name='Cash In' role='text' automationid='' check:text='Cash In' /&gt;" Guid="84233250-ed50-40d0-bb80-6da51173b49d" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">CashIn</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,290" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="c049e10d-ed66-4b18-9eb5-8c9649b2df07" ContentHash="27k1MWXeDUuANqPRcSdntA" CvElementArea="825, 511, 306, 63" CvType="InputBox" DesignTimeRectangle="829, 515, 300, 57" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='onustb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='onustb' role='editable text' /&gt;" Guid="bf63749e-33b9-4f79-8eb8-59b2d56d519a" InformativeScreenshot="ef94bafa5dc2189eaae740d61fd305e4.png" IsResponsive="True" Reference="HxnU693WM0e0ujgFaVypfQ/WQsbvCxI5UqB-ULakc3bog" ScopeSelectorArgument="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c049e10d-ed66-4b18-9eb5-8c9649b2df07" CvTextArea="565, 522, 213, 32" CvTextArgument="On Us Check" CvType="Text" DesignTimeRectangle="569, 520, 208, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl name='On Us Check' role='text' /&gt;&lt;ctrl name='On Us Check' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='On Us Check' role='text' /&gt;&lt;ctrl name='On Us Check' role='text' automationid='' check:text='On Us Check' /&gt;" Guid="10a6a234-9fc9-4a70-91c7-5d6a7746b8a8" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">OnUsCheck</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Not On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,290" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="17aabf70-cd94-4e45-9ffa-1e787d9ab0c7" ContentHash="eUSwKjS_w0aDowrTZoev0Q" CvElementArea="824, 608, 307, 65" CvType="InputBox" DesignTimeRectangle="829, 612, 300, 58" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='notonustb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='notonustb' role='editable text' /&gt;" Guid="68fcbfc6-30b1-428d-8056-44e2cb2e3d4b" InformativeScreenshot="1eadf997777d1dacb557feedb74be55f.png" IsResponsive="True" Reference="HxnU693WM0e0ujgFaVypfQ/kJcWQL00M0m52BsV2vrJ8Q" ScopeSelectorArgument="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="17aabf70-cd94-4e45-9ffa-1e787d9ab0c7" CvTextArea="500, 620, 278, 32" CvTextArgument="Not On Us Check" CvType="Text" DesignTimeRectangle="504, 617, 272, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Not On Us Check' role='text' /&gt;&lt;ctrl name='Not On Us Check' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Not On Us Check' role='text' /&gt;&lt;ctrl name='Not On Us Check' role='text' automationid='' check:text='Not On Us Check' /&gt;" Guid="4f289607-d60e-4b4a-9214-eede40c0147f" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">NotOnUsCheck</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Transaction #'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="3083c2d3-8579-4ed8-8180-9d501ccd6144" ContentHash="pRwO6wfm7kyTuGFrok2G5w" CvTextArea="1295, 312, 120, 32" CvType="AnyWordGroup" DesignTimeRectangle="1299, 310, 116, 40" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='transnrlabel' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='transnrlabel' role='text' /&gt;" Guid="d60af456-ef98-4c79-8029-d73cf70c1778" InformativeScreenshot="c2d5d128dc4074d4e05cc3ef4f787352.png" Reference="HxnU693WM0e0ujgFaVypfQ/sMDr3saCEEan1nfmHaAUAw" ScopeSelectorArgument="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3083c2d3-8579-4ed8-8180-9d501ccd6144" CvTextArea="1060, 312, 225, 32" CvTextArgument="Transaction #:" CvType="Text" DesignTimeRectangle="1066, 310, 220, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Transaction #:' role='text' /&gt;&lt;ctrl name='Transaction #:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transaction #:' role='text' /&gt;&lt;ctrl name='Transaction #:' role='text' automationid='' check:text='Transaction #:' /&gt;" Guid="2497974b-1cad-42c1-a54f-61b66389d723" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">TransactionID</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,177.2" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">TransactionID</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Accept''" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1303122b-5ff0-4cbe-b96b-10f01e5cc1e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="a8804f4d-d7cd-4a50-9bf4-fa98d02714c2" ContentHash="NKgGDllG-U6xRScY6fqqPQ" CvElementArea="1094, 1357, 206, 82" CvTextArea="1148, 1382, 97, 35" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1153, 1381, 91, 35" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl name='Accept' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl name='Accept' role='text' automationid='' check:text='Accept' /&gt;" Guid="edbde630-7143-4e52-b4fa-e05fbff46740" InformativeScreenshot="edd5cc3284947b63f48ec6cf3d937e3e.png" Reference="HxnU693WM0e0ujgFaVypfQ/u0Oxj6BL1EGe3jvrO8wmiA" ScopeSelectorArgument="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a8804f4d-d7cd-4a50-9bf4-fa98d02714c2" CvElementArea="1094, 1357, 206, 82" CvTextArea="1148, 1382, 97, 35" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="1099, 1360, 200, 77" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Accept' role='push button' automationid='' check:text='Accept' /&gt;" Guid="37ed2fcf-2463-4c38-a7c5-d1caeb21f26a" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="625, 166, 1557, 1563" ContentHash="ORnRVveJLU6wcEpajKTmYQ" FilePath="doubleui.exe" IconBase64="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" InformativeScreenshot="9f55d62fbfa8957e7d47c4b7c9dab92a.png" Reference="HxnU693WM0e0ujgFaVypfQ/Fs-CbrwnpE6vWX4CpP-0dw" Selector="&lt;wnd app='doubleui.exe' cls='HwndWrapper*' title='DoubleUI' /&gt;" Title="DoubleUI" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
